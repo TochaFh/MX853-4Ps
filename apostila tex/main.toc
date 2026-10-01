@@ -1,0 +1,5 @@
+\contentsline {part}{I\hspace {1em}Foundations}{1}{part.1}%
+\contentsline {chapter}{\numberline {1}Proper Colourings}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Definitions}{3}{section.1.1}%
+\contentsline {chapter}{\numberline {2}The Four Colour Theorem}{4}{chapter.2}%
+\contentsfinish 
