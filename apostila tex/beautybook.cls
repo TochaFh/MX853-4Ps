@@ -301,7 +301,7 @@ fuzzy shadow={0.4mm}{-0.4mm}{0mm}{0.2mm}{fill=white!40!gray},%下
       \end{pgfonlayer}
       \path[fill=outermarginfgcolor]node[append after command={
       ([xshift=-3*\rad]chapinfoofpart.north west)  to[out=0,in=-180,looseness=1] ([xshift=\rad]chapinfoofpart.south west) --([xshift=-\rad]chapinfoofpart.south east) to[out=0,in=180,looseness=1] ([xshift=3*\rad]chapinfoofpart.north east) --cycle},
-      text=white,font=\sffamily\large\bfseries,align=center,minimum height=1cm] (chapinfoofpart) at ([shift={(.6\linewidth,-4.95cm)}]current page.north west) {Part\ \thepart};
+      text=white,font=\sffamily\large\bfseries,align=center,minimum height=1cm] (chapinfoofpart) at ([shift={(.6\linewidth,-4.95cm)}]current page.north west) {\partname\ \thepart};
       \begin{pgfonlayer}{bottom}
         \fill[outermarginfgcolor!90,opacity=0.5] ([shift={(-3*\rad,0)}]chapinfoofpart.north west) to[out=180,in=0,looseness=1] +(-4*\rad,-1.2cm)--([shift={(7*\rad,-1.2cm)}]chapinfoofpart.north east) to[out=-180,in=0,looseness=1] +(-4*\rad,1.2cm); % partnumber shade
       \end{pgfonlayer}
@@ -429,7 +429,7 @@ color=transparent!90, middle color=transparent!20]
                 (.67\paperwidth+4.4cm,-.25cm) rectangle ++(1mm,-.5cm);
             \end{tikzpicture}
         };
-        \node[above,font=\sc\huge,shift={(.33\linewidth,.5\barwidth)}] (partname) at (hbar) {Part\ \thepart};
+        \node[above,font=\sc\huge,shift={(.33\linewidth,.5\barwidth)}] (partname) at (hbar) {\partname\ \thepart};
         \node[below left,font=\sc\huge,shift={(.146\linewidth,-\barwidth)}] (partcontents) at (partname) {\begin{varwidth}{.9\linewidth}\raggedright\baselineskip=25pt  #1 \end{varwidth}}; % 标题名称
           \begin{pgfonlayer}{background}
             \node[above,shift={(-.4\linewidth,-4*\barwidth)}] at (partname) {\ifdefvoid{\@partimage}{}{\includegraphics[width=1.2\linewidth]{\@partimage}}}; % 图片位置调整
@@ -473,7 +473,7 @@ color=transparent!90, middle color=transparent!20]
                       (.15\paperwidth+4.5cm,-.25cm) rectangle ++(1mm,-.5cm);
                   \end{tikzpicture}
               };
-              \node[above,font=\sc\huge,shift={(-.31\linewidth,.5\barwidth)}] (partname) at (hbar) {Part\ \thepart};
+              \node[above,font=\sc\huge,shift={(-.31\linewidth,.5\barwidth)}] (partname) at (hbar) {\partname\ \thepart};
               \node[below right,font=\sc\huge,shift={(-.125\linewidth,-\barwidth)}] (partcontents) at (partname) {\begin{varwidth}{.9\linewidth}\raggedright\baselineskip=25pt  #1 \end{varwidth}}; % 标题名称
                 \begin{pgfonlayer}{background}
                   \node[above,shift={(.35\linewidth,-4*\barwidth)}] at (partname) {\ifdefvoid{\@partimage}{}{\includegraphics[width=1.2\linewidth]{\@partimage}}}; % 图片位置调整
@@ -1207,7 +1207,7 @@ anchor=west,rounded corners=3pt,font=\bfseries\normalsize] at ([xshift=0cm,yshif
     headpunct={.},
     qed=\color{cyan!40!black}$\blacksquare$,%\qedsymbol
 ]{Proofstyle}
-\declaretheorem[style=Proofstyle,numbered=no,name={\itbf{Proof}}]{Proof}
+\declaretheorem[style=Proofstyle,numbered=no,name={\itbf{Demonstração}}]{Proof}
 \renewenvironment{proof}{\begin{Proof} }{\end{Proof}}
 \declaretheorem[style=Proofstyle,numbered=no,name={\itbf{Solution}}]{solution}
 % /* -------------------------------------------------------------------------- */

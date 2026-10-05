@@ -1,0 +1,16 @@
+Conhecendo o Arduíno.
+Passo a passo de como montar uma conta no tinkercad.
+Estrutura de códigos: funções setup() e loop()
+Eletrônica básica: resistores, protoboard , lei de ohm, uso do multímetro.
+Projeto acender um led
+Conceitos de sinal digital: Estados High e Low
+Controle de fluxo. If, else
+Acionamento por botões, uso de resistores
+Projeto criar um semáforo
+Diferença de sinal digital e analógico , leitura analógica
+Pwm
+Controlar o brilho de um led usando um potenciômetro.
+Buzzer
+Como o arduíno controla motores , servo motores
+Motor de corrente continua
+Como controlar o movimento de um servo motor com potenciômetro.

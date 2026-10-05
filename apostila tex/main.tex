@@ -14,6 +14,7 @@
 \RequirePackage[utf8]{inputenc}
 \RequirePackage{times}
 \RequirePackage[T1]{fontenc}
+\RequirePackage[brazil]{babel}
 \RequirePackage{microtype}
 \RequirePackage[round]{natbib}
 
@@ -30,13 +31,13 @@
 }
 
 \mynewtheorem{
-    defi={\textbf{Definition}}[section]{interior style={left color=ReD!8,right color=ReD!5!CyaN!50}, borderline west={1.5mm}{0mm}{ReD}},
-    thm={\textbf{Theorem}}[section]{interior style={left color=CyaN!80!black!20,right color=CyaN!80!black!15!CyaN!50}, borderline west={1.5mm}{0mm}{CyaN!80!black}},
-    lem={\textbf{Lemma}}[section]{interior style={left color=BluE!8,right color=BluE!5!CyaN!50}, borderline west={1.5mm}{0mm}{BluE}},
-    prop={\textbf{Proposition}}[section]{interior style={left color=OrangE!8,right color=OrangE!5!CyaN!50}, borderline west={1.5mm}{0mm}{OrangE}},
-    exam={\textbf{Example}}[chapter]{interior style={left color=DarkGreen!8,right color=DarkGreen!5!CyaN!50}, borderline west={1.5mm}{0mm}{DarkGreen}},
+    defi={\textbf{Definição}}[section]{interior style={left color=ReD!8,right color=ReD!5!CyaN!50}, borderline west={1.5mm}{0mm}{ReD}},
+    thm={\textbf{Teorema}}[section]{interior style={left color=CyaN!80!black!20,right color=CyaN!80!black!15!CyaN!50}, borderline west={1.5mm}{0mm}{CyaN!80!black}},
+    lem={\textbf{Lema}}[section]{interior style={left color=BluE!8,right color=BluE!5!CyaN!50}, borderline west={1.5mm}{0mm}{BluE}},
+    prop={\textbf{Proposição}}[section]{interior style={left color=OrangE!8,right color=OrangE!5!CyaN!50}, borderline west={1.5mm}{0mm}{OrangE}},
+    exam={\textbf{Exemplo}}[chapter]{interior style={left color=DarkGreen!8,right color=DarkGreen!5!CyaN!50}, borderline west={1.5mm}{0mm}{DarkGreen}},
 }
-\newtheorem*{remark}{\textbf{Remark}}
+\newtheorem*{remark}{\textbf{Observação}}
 
 \begin{document}
 \thispagestyle{empty}
@@ -66,7 +67,7 @@
 \pagenumbering{Roman}
 
 {\thispagestyle{empty}
-\chapter*{Preface}
+\chapter*{Prefácio}
 This short book collects the definitions and first theorems of graph
 colouring, aimed at a reader who has seen basic graph theory but not yet
 chromatic numbers.
